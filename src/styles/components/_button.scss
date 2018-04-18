@@ -1,0 +1,36 @@
+.button {
+    border: none;
+    color: white;
+    padding: $s-size;
+    font-weight: 300;
+    font-size: $font-size-large;
+    transition: $easing-time $easing-type;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+}
+
+@mixin darkenHover($color) {
+    background: $color;
+    &:hover {
+        background: darken($color, 10%);
+    } 
+}
+
+.button--blue {
+    background: $blue;
+    @include darkenHover($blue);
+}
+
+.button--logout {
+    @include darkenHover($dark-blue);
+}
+
+.button--remove {
+    margin-top: $m-size;
+    background: $middle-gray;
+    @include darkenHover($middle-gray);
+}
+
+
+

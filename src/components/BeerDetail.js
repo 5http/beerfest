@@ -44,11 +44,11 @@ export class BeerDetail extends Component {
                                     initialRating={this.props.beer.rating}
                                     onChange={(rating) => this.updateRating(rating)}
                                 /> <br />
-                                <button onClick={() => this.removeRating()}>Remove rating</button>
+                                <button className="button button--blue" onClick={() => this.removeRating()}>Remove rating</button>
                             </div>
                         ) : (
                             <div>
-                                <button onClick={() => this.addRating()}>Add rating</button>
+                                <button className="button button--blue" onClick={() => this.addRating()}>Add rating</button>
                             </div>
                         )}
                     </div>

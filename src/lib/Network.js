@@ -3,6 +3,7 @@ import axios from 'axios';
 class Network {
   static getUrl(route) {
     return `${process.env.REACT_APP_API_HOST}/${route}`;
+    //console.log(`${process.env.REACT_APP_API_HOST}/${route}`);
   }
 
   static basicHeaders() {
@@ -12,8 +13,8 @@ class Network {
     return headers;
   }
 
-  static errorHandler({error}) {
-    throw error;
+  static errorHandler(error) {
+    console.log(error);
   }
 
   static async get(route) {

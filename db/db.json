@@ -12,7 +12,7 @@
         "city": "Houffalize",
         "country": "Belgium"
       },
-      "rating": 4
+      "rating": 3
     },
     {
       "id": 6,
@@ -40,7 +40,7 @@
         "city": "Leuven",
         "country": "Belgium"
       },
-      "rating": 2
+      "rating": 3
     },
     {
       "id": 7,
@@ -86,7 +86,6 @@
     {
       "id": 2,
       "name": "Jupiler",
-      "rating": 3,
       "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Jupiler.png",
       "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Jupiler.png",
       "brewery": {
@@ -95,7 +94,8 @@
         "address": "Brouwerijplein 1",
         "city": "Leuven",
         "country": "Belgium"
-      }
+      },
+      "rating": 2
     },
     {
       "id": 9,
@@ -122,7 +122,7 @@
         "city": "Puurs",
         "country": "Belgium"
       },
-      "rating": 4
+      "rating": 1
     },
     {
       "id": 8,
