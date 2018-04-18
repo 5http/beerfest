@@ -1,0 +1,186 @@
+{
+  "beers": [
+    {
+      "id": 10,
+      "name": "La Chouffe",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Chouffe.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Chouffe.png",
+      "brewery": {
+        "id": 6,
+        "name": "Brouwerij Achouffe",
+        "address": "Achouffe 32",
+        "city": "Houffalize",
+        "country": "Belgium"
+      },
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Kwak",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Kwak.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Kwak.png",
+      "brewery": {
+        "id": 3,
+        "name": "Brouwerij bosteels",
+        "address": "Kerkstraat 96",
+        "city": "Buggenhout",
+        "country": "Belgium"
+      },
+      "rating": 5
+    },
+    {
+      "id": 1,
+      "name": "Stella",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Stella.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Stella.png",
+      "brewery": {
+        "id": 2,
+        "name": "Inbev",
+        "address": "Brouwerijplein 1",
+        "city": "Leuven",
+        "country": "Belgium"
+      },
+      "rating": 2
+    },
+    {
+      "id": 7,
+      "name": "Oude Caert",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Oude+Caert.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Oude+Caert.png",
+      "brewery": {
+        "id": 4,
+        "name": "Brouwerij d'Oude Caert",
+        "address": "Kortestraat 72",
+        "city": "Brasschaat",
+        "country": "Belgium"
+      },
+      "rating": 3
+    },
+    {
+      "id": 5,
+      "name": "Tripel Karmeliet",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Karmeliet.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Karmeliet.png",
+      "brewery": {
+        "id": 3,
+        "name": "Brouwerij bosteels",
+        "address": "Kerkstraat 96",
+        "city": "Buggenhout",
+        "country": "Belgium"
+      },
+      "rating": 3
+    },
+    {
+      "id": 3,
+      "name": "Duvel",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Duvel.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Duvel.png",
+      "brewery": {
+        "id": 1,
+        "name": "Moortgat",
+        "address": "Breendonk-Dorp 58",
+        "city": "Puurs",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jupiler",
+      "rating": 3,
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Jupiler.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Jupiler.png",
+      "brewery": {
+        "id": 2,
+        "name": "Inbev",
+        "address": "Brouwerijplein 1",
+        "city": "Leuven",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Omer",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Omer.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Omer.png",
+      "brewery": {
+        "id": 5,
+        "name": "Brouwerij Omer Vander Ghinste",
+        "address": "Kwabrugstraat 5",
+        "city": "Bellegem",
+        "country": "Belgium"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Vedett",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Vedett.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Vedett.png",
+      "brewery": {
+        "id": 1,
+        "name": "Moortgat",
+        "address": "Breendonk-Dorp 58",
+        "city": "Puurs",
+        "country": "Belgium"
+      },
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "name": "Blauw",
+      "thumb_image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/thumb/Blauw.png",
+      "image_url": "https://s3.eu-central-1.amazonaws.com/icapps-beers/full/Blauw.png",
+      "brewery": {
+        "id": 5,
+        "name": "Brouwerij Omer Vander Ghinste",
+        "address": "Kwabrugstraat 5",
+        "city": "Bellegem",
+        "country": "Belgium"
+      },
+      "rating": 4
+    }
+  ],
+  "breweries": [
+    {
+      "id": 1,
+      "name": "Moortgat",
+      "address": "Breendonk-Dorp 58",
+      "city": "Puurs",
+      "country": "Belgium"
+    },
+    {
+      "id": 2,
+      "name": "Inbev",
+      "address": "Brouwerijplein 1",
+      "city": "Leuven",
+      "country": "Belgium"
+    },
+    {
+      "id": 3,
+      "name": "Brouwerij bosteels",
+      "address": "Kerkstraat 96",
+      "city": "Buggenhout",
+      "country": "Belgium"
+    },
+    {
+      "id": 4,
+      "name": "Brouwerij d'Oude Caert",
+      "address": "Kortestraat 72",
+      "city": "Brasschaat",
+      "country": "Belgium"
+    },
+    {
+      "id": 5,
+      "name": "Brouwerij Omer Vander Ghinste",
+      "address": "Kwabrugstraat 5",
+      "city": "Bellegem",
+      "country": "Belgium"
+    },
+    {
+      "id": 6,
+      "name": "Brouwerij Achouffe",
+      "address": "Achouffe 32",
+      "city": "Houffalize",
+      "country": "Belgium"
+    }
+  ]
+}
