@@ -26,7 +26,7 @@
         "city": "Buggenhout",
         "country": "Belgium"
       },
-      "rating": 5
+      "rating": 3
     },
     {
       "id": 1,
@@ -54,7 +54,7 @@
         "city": "Brasschaat",
         "country": "Belgium"
       },
-      "rating": 3
+      "rating": 5
     },
     {
       "id": 5,
@@ -95,7 +95,7 @@
         "city": "Leuven",
         "country": "Belgium"
       },
-      "rating": 2
+      "rating": 1
     },
     {
       "id": 9,
@@ -122,7 +122,7 @@
         "city": "Puurs",
         "country": "Belgium"
       },
-      "rating": 1
+      "rating": 4
     },
     {
       "id": 8,
@@ -136,7 +136,7 @@
         "city": "Bellegem",
         "country": "Belgium"
       },
-      "rating": 4
+      "rating": 3
     }
   ],
   "breweries": [

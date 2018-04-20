@@ -29,30 +29,38 @@ export class BeerDetail extends Component {
 
     render() {
         return (
-            <div>
-                {this.props.beer ? (
-                    <div>
-                        {this.props.beer.name} <br />
-                        <img src={this.props.beer.image_url} alt={this.props.beer.brewery.name} /> <br />
-                        {this.props.beer.brewery.name} <br />
-                        {this.props.beer.brewery.address} <br />
-                        {this.props.beer.brewery.city} <br />
-                        {this.props.beer.brewery.country} <br />
-                        {this.props.beer.rating ? (
+            <div className="beer-detail">
+                <div className="content-container">
+                    <div className="beer-detail__item">
+                        {this.props.beer ? (
                             <div>
-                                <Rating 
-                                    initialRating={this.props.beer.rating}
-                                    onChange={(rating) => this.updateRating(rating)}
-                                /> <br />
-                                <button className="button button--blue" onClick={() => this.removeRating()}>Remove rating</button>
+                                <h1>{this.props.beer.name}</h1>
+                                <img src={this.props.beer.image_url} alt={this.props.beer.brewery.name} /><br />
+                                <span>
+                                    {this.props.beer.brewery.name} <br />
+                                    {this.props.beer.brewery.address} <br />
+                                    {this.props.beer.brewery.city} <br />
+                                    {this.props.beer.brewery.country}
+                                </span>
+                                {this.props.beer.rating ? (
+                                    <div>   
+                                        <div className="beer-detail__rating">
+                                            <Rating 
+                                                initialRating={this.props.beer.rating}
+                                                onChange={(rating) => this.updateRating(rating)}
+                                            />
+                                        </div>
+                                        <button className="button button--blue" onClick={() => this.removeRating()}>Remove rating</button>
+                                    </div>
+                                ) : (
+                                    <div>
+                                        <button className="button button--blue" onClick={() => this.addRating()}>Add rating</button>
+                                    </div>
+                                )}
                             </div>
-                        ) : (
-                            <div>
-                                <button className="button button--blue" onClick={() => this.addRating()}>Add rating</button>
-                            </div>
-                        )}
+                        ) : (<span>Loading...</span>)}
                     </div>
-                ) : ('Loading')}
+                </div>
             </div>
         );
     };

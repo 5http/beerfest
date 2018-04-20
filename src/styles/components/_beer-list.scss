@@ -1,13 +1,12 @@
-.list-header {
-    background: $off-white;
-    border: 1px solid $border-color;
-    color: $middle-gray;
-    display: flex;
-    justify-content: space-between;
-    padding: $m-size;
+.beer-list {
+    margin-bottom: $xl-size;
 }
 
-.list-item {
+.beer-list__item:first-of-type {
+    border-top: 1px solid $border-color;
+}
+
+.beer-list__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,13 +29,20 @@
         font-size: $font-size-small;
         color: $middle-gray;
     }
+    img {
+        margin-right: $m-size;
+    }
 }
 
-.list-item--message {
-    cursor: default;
-    font-style: italic;
-    &:hover {
-        background: none;
+.item-left {
+    display: flex;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        margin-bottom: $s-size;
     }
 }
 

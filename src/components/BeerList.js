@@ -2,19 +2,18 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {getBeers, filterBeers} from '../reducers/beers';
 import {Link} from 'react-router-dom';
+import Rating from 'react-rating';
 
 const BeerItem = ({id, thumb_image_url, name, brewery, rating}) => (
-    <div>
-        <img src={thumb_image_url} alt={brewery.name} />
-        <Link to={`/beers/${id}`}>{name}</Link> - {brewery.name} {rating ? `- ${rating}` : ''}
-        {/* <span className='delete-item'>
-            <button onClick={() => deleteTodo(id)}>X</button>
-        </span>
-        <input type="checkbox" 
-            checked={isComplete} 
-            onChange={() => toggleTodo(id)}
-        />{name} */}
-    </div>
+    <Link className="beer-list__item" to={`/beers/${id}`}>
+        <div className="item-left">
+            <img src={thumb_image_url} alt={brewery.name} />
+            <div><h3>{name}</h3><span>{brewery.name}</span></div>
+        </div>
+        {rating ? (
+            <Rating initialRating={rating} readonly />
+        ) : ('')}
+    </Link>
 )
 
 class BeerList extends Component {
@@ -32,13 +31,13 @@ class BeerList extends Component {
     render () {
         return (
             <div className="beer-list">
-                {this.props.beers.map(beer => 
-                    <BeerItem {...beer} 
-                        key={beer.id}
-                        //toggleTodo={this.props.toggleTodo}
-                        //deleteTodo={this.props.deleteTodo}
-                    />
-                )}
+                <div className="content-container">
+                    {this.props.beers.map(beer => 
+                        <BeerItem {...beer} 
+                            key={beer.id}
+                        />
+                    )}
+                </div>
             </div>
         )
     }

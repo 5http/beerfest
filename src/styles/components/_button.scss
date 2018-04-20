@@ -1,7 +1,7 @@
 .button {
     border: none;
     color: white;
-    padding: $s-size;
+    padding: $s-size $m-size;
     font-weight: 300;
     font-size: $font-size-large;
     transition: $easing-time $easing-type;
@@ -12,9 +12,14 @@
 
 @mixin darkenHover($color) {
     background: $color;
-    &:hover {
+    &:hover, &.active {
         background: darken($color, 10%);
     } 
+}
+
+@mixin darkenActive($color) {
+    background: $color;
+    background: darken($color, 10%);
 }
 
 .button--blue {
@@ -22,15 +27,7 @@
     @include darkenHover($blue);
 }
 
-.button--logout {
-    @include darkenHover($dark-blue);
-}
 
-.button--remove {
-    margin-top: $m-size;
-    background: $middle-gray;
-    @include darkenHover($middle-gray);
-}
 
 
 

@@ -1,0 +1,26 @@
+.beer-detail__item {
+    border: 1px solid $border-color;
+    color: $dark-gray;
+    padding: $m-size;
+    margin-bottom: $xl-size;
+    text-align: center;
+    h1 {
+        margin: 0 0 $m-size;
+    }
+    span {
+        font-size: $font-size-small;
+        color: $middle-gray;
+    }
+    img {
+        max-width: 100%;
+        display: inline-block;
+        margin-bottom: $m-size;
+    }
+    button {
+        margin: $m-size 0;
+    }
+}
+
+.beer-detail__rating {
+    margin-top: $m-size;
+}
