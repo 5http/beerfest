@@ -10,7 +10,7 @@ export const fetchUpdateRating = (id, rating) => {
 
 export const fetchRemoveRating = (id) => {
   return Network.get(`beers/${id}`).then(beer => {
-    delete beer['rating'];
+    beer['rating'] = 0; 
     return Network.put(`beers/${id}`, beer).then(id);
   });
 }

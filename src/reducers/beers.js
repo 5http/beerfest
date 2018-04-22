@@ -1,6 +1,7 @@
 import {fetchBeers, fetchUpdateRating, fetchRemoveRating} from '../lib/beerServices';
 
 const defaultState = [];
+//const defaultSortBy = 'name';
 
 export const GET_BEERS = 'GET_BEERS';
 export const UPDATE_RATING = 'UPDATE_RATING';
@@ -20,9 +21,17 @@ export const getBeers = () => {
 export const filterBeers = (beers, filter) => {
     switch (filter) {
         case 'rated':
-            return beers.filter(b => b.rating);
+            return beers.filter(b => b.rating).sort((a,b) => sortBeers(a, b, 'rating'));
         default:
-            return beers;
+            return beers.sort((a,b) => sortBeers(a, b, 'name'));
+    }
+}
+
+const sortBeers = (a, b, sortBy) => {
+    if(sortBy === 'name') {
+        return a.name > b.name ? 1 : -1;
+    } else if (sortBy === 'rating') {
+        return a.rating < b.rating ? 1 : -1;
     }
 }
 
@@ -58,7 +67,8 @@ export default (state = defaultState, action) => {
         case REMOVE_RATING:
             return state.map((beer) => {
                 if(beer.id === action.id) {
-                    delete beer['rating'];
+                    //delete beer['rating'];
+                    beer['rating'] = 0; 
                     return beer;
                 } else {
                     return beer;

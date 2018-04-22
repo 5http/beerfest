@@ -12,7 +12,7 @@
         "city": "Houffalize",
         "country": "Belgium"
       },
-      "rating": 3
+      "rating": 1
     },
     {
       "id": 6,
@@ -40,7 +40,7 @@
         "city": "Leuven",
         "country": "Belgium"
       },
-      "rating": 3
+      "rating": 4
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
         "city": "Buggenhout",
         "country": "Belgium"
       },
-      "rating": 3
+      "rating": 2
     },
     {
       "id": 3,
@@ -81,7 +81,8 @@
         "address": "Breendonk-Dorp 58",
         "city": "Puurs",
         "country": "Belgium"
-      }
+      },
+      "rating": 0
     },
     {
       "id": 2,
@@ -95,7 +96,7 @@
         "city": "Leuven",
         "country": "Belgium"
       },
-      "rating": 1
+      "rating": 2
     },
     {
       "id": 9,
@@ -108,7 +109,8 @@
         "address": "Kwabrugstraat 5",
         "city": "Bellegem",
         "country": "Belgium"
-      }
+      },
+      "rating": 1
     },
     {
       "id": 4,
@@ -136,7 +138,7 @@
         "city": "Bellegem",
         "country": "Belgium"
       },
-      "rating": 3
+      "rating": 4
     }
   ],
   "breweries": [
